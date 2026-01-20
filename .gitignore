@@ -1,3 +1,4 @@
+.authorized_key
 .lock.hcl
 .tfstate
 .vagrant
