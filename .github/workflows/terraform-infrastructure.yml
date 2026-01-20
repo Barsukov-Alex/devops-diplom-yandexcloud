@@ -45,6 +45,13 @@ jobs:
     - name: Terraform Format and Validate
       run: terraform -chdir=./files/terraform validate
 
+    - name: Check directory structure
+      run: |
+        pwd
+        ls -la ./files/
+        ls -la ./files/terraform/
+
+
     - name: Terraform Plan
       run: |
         terraform -chdir=./files/terraform plan -input=false -out=tfplan \
